@@ -1,0 +1,123 @@
+@font-face
+{
+	font-family:'museoslab';
+	src:url('fonts/Museo_Slab.woff'),
+	    url('fonts/Museo_Slab.ttf');
+}
+html
+{
+	height:100%;
+}
+body
+{
+	margin:0;
+	padding:0;
+	background-image:url("img.png");
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-attachment:fixed;
+}
+.formBox
+{
+	margin:auto;
+    margin-top:5vh;
+    margin-bottom:5vh;
+    border-radius:2vh;
+	width:80%;
+    max-width:450px;
+	padding:4vw;
+	background-color:rgba(255,255,255,0.75);
+    font-size:4vh;
+	text-align:center;
+	font-family:museoslab;
+	box-shadow:0.7vh 0.7vh rgba(150,150,150,0.85);
+}
+.fButton
+{
+	font-size:4vh;
+	padding:1vh;
+	border-radius:1vh;
+	background-color:rgb(0,200,250);
+	border:0.8vh outset rgb(0,150,180);
+	margin:2vh;
+}
+.fButton:active
+{
+	border:0.8vh inset rgb(0,130,140);
+	outline:none;
+}	
+input
+{
+	height:5vh;
+	font-size:4vh;
+	width:70vw;
+	max-width:400px;
+	border-radius:1vh;
+	padding:1vh;
+}
+input[type=radio]
+{
+	width:4vh;
+	height:3vh;
+}
+.fLink:link
+{
+	text-decoration:none;
+	color:rgb(0,110,50);
+}
+.err
+{	
+	box-sizing:border-box;
+	min-height:4vh;
+	overflow:hidden;
+	color:red;
+	font-size:3vh;
+}
+.formBox > form > .err
+{
+	margin:auto;
+	margin-top:1vh;
+	margin-bottom:3vh;	
+	border:1px solid red;
+	border-radius:1vh;	
+	width:56vw;
+	max-width:320px;
+	background-color:white;	
+	text-align:center;	
+}
+.editBox
+{
+	margin:auto;
+    margin-top:5vh;
+    margin-bottom:5vh;
+    border-radius:2vh;
+	width:80%;
+	max-width:600px;
+	padding:4vw;
+	background-color:rgba(255,255,255,0.85);
+    font-size:4vh;
+	font-family:museoslab;
+	box-shadow:0.7vh 0.7vh rgba(150,150,150,0.85);
+}
+.editBox > form > input
+{
+	border:none;
+	border-bottom:1px solid black;
+	border-radius:0;
+	background:none;
+	max-width:500px;
+}
+.editBox > form > input:focus
+{
+	border-color:rgb(100,200,100);
+	outline:none;
+	color:rgb(60,150,60);
+}
+.editBox > form > .err
+{
+	margin-top:1vh;
+	margin-bottom:3vh;	
+	width:64vw;
+	max-width:450px;
+}
